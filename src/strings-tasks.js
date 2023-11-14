@@ -168,7 +168,7 @@ function removeFirstOccurrences(str, value) {
   if (index !== -1) {
     return str.slice(0, index) + str.slice(index + value.length);
   }
-  return str;
+  return strw;
 }
 
 /**
