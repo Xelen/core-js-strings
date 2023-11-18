@@ -496,7 +496,7 @@ function encodeToRot13(str) {
   const allChars = [
     'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz',
   ];
-  const arrStr = str.split('');
+  const arrStr = Array.from(str);
   const newArr = arrStr.map((char) => {
     const charIndex = allChars[0].indexOf(char);
     if (charIndex === -1) {
